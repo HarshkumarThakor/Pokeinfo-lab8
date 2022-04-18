@@ -10,6 +10,7 @@ def main():
     root.title("Pokemon INFORMATION")
     root.iconbitmap("Poke-ball.ico")
     #root.geometry('550x420')
+    root.resizable(False, False)
     
     frm_user_input = ttk.Frame(root)
     frm_user_input.grid(row=0, column=0, columnspan=2, padx=25, pady=25)
@@ -46,49 +47,49 @@ def main():
     btwn_get_info.grid(row=0, column=2, padx=10, pady=10)
     
     lbl_height = ttk.Label(frm_info, text='Height:')
-    lbl_height.grid(row=100, column=100)
+    lbl_height.grid(row=100, column=100, padx=(10,0), pady=10, sticky=E)
     lbl_height_val = ttk.Label(frm_info, text='TBD')
     lbl_height_val.grid(row=100, column=200, padx=20, pady=10)
     
     lbl_weight = ttk.Label(frm_info, text='Weight:')
-    lbl_weight.grid(row=300, column=100)
+    lbl_weight.grid(row=300, column=100, padx=(10,0), pady=10, sticky=E)
     lbl_weight_val = ttk.Label(frm_info, text='TBD')
     lbl_weight_val.grid(row=300, column=200, padx=20, pady=10)
     
     lbl_type = ttk.Label(frm_info, text='Type:')
-    lbl_type.grid(row=500, column=100)
+    lbl_type.grid(row=500, column=100, padx=(10,0), pady=10, sticky=E)
     lbl_type_val = ttk.Label(frm_info, text='TBD')
     lbl_type_val.grid(row=500, column=200, padx=20, pady=10)
     
     lbl_hp = ttk.Label(frm_stats, text='HP:')
-    lbl_hp.grid(row=100, column=100, padx=10, pady=10)
+    lbl_hp.grid(row=100, column=100, padx=(10,0), pady=10, sticky=E)
     prg_hp = ttk.Progressbar(frm_stats, length=200, maximum=255)
-    prg_hp.grid(row=100, column=200, padx=10, pady=10)
+    prg_hp.grid(row=100, column=200, padx=(5,10), pady=10, sticky=W)
     
     lbl_attack = ttk.Label(frm_stats, text='ATTACK:')
-    lbl_attack.grid(row=200, column=100, padx=10, pady=10)
+    lbl_attack.grid(row=200, column=100, padx=(10,0), pady=10, sticky=E)
     prg_attack = ttk.Progressbar(frm_stats, length=200, maximum=255)
-    prg_attack.grid(row=200, column=200, padx=10, pady=10)
+    prg_attack.grid(row=200, column=200, padx=(5,10), sticky=W)
     
     lbl_defense = ttk.Label(frm_stats, text='DEFENSE:')
-    lbl_defense.grid(row=300, column=100, padx=10, pady=10)
+    lbl_defense.grid(row=300, column=100, padx=(10,0), pady=10, sticky=E)
     prg_defense = ttk.Progressbar(frm_stats, length=200, maximum=255)
-    prg_defense.grid(row=300, column=200, padx=10, pady=10)
+    prg_defense.grid(row=300, column=200, padx=(5,10), sticky=W)
     
     lbl_special_attack = ttk.Label(frm_stats, text='SPECIAL ATTACK:')
-    lbl_special_attack.grid(row=400, column=100, padx=10, pady=10)
+    lbl_special_attack.grid(row=400, column=100, padx=(10,0), pady=10, sticky=E)
     prg_special_attack = ttk.Progressbar(frm_stats, length=200, maximum=255)
-    prg_special_attack.grid(row=400, column=200, padx=10, pady=10)
+    prg_special_attack.grid(row=400, column=200, padx=(5,10), sticky=W)
     
     lbl_special_defense = ttk.Label(frm_stats, text='SPECIAL DEFENSE:')
-    lbl_special_defense.grid(row=500, column=100, padx=10, pady=10)
+    lbl_special_defense.grid(row=500, column=100, padx=(10,0), pady=10, sticky=E)
     prg_special_defense = ttk.Progressbar(frm_stats, length=200, maximum=255)
-    prg_special_defense.grid(row=500, column=200, padx=10, pady=10)
+    prg_special_defense.grid(row=500, column=200, padx=(5,10), sticky=W)
     
     lbl_speed = ttk.Label(frm_stats, text='SPEED:')
-    lbl_speed.grid(row=600, column=100, padx=10, pady=10)
+    lbl_speed.grid(row=600, column=100, padx=(10,0), pady=10, sticky=E)
     prg_speed = ttk.Progressbar(frm_stats, length=200, maximum=255)
-    prg_speed.grid(row=600, column=200, padx=10, pady=10)
+    prg_speed.grid(row=600, column=200, padx=(5,10), sticky=W)
     
     root.mainloop()
     
